@@ -4,6 +4,21 @@ from sklearn.model_selection import train_test_split
 from sklearn.preprocessing import StandardScaler, LabelEncoder
 from tensorflow.keras.models import Sequential
 from tensorflow.keras.layers import Dense
+import joblib
+
+def create_and_train_model(X_train, y_train_encoded, X_test, y_test_encoded):
+    # Buat model
+    model = Sequential()
+    model.add(Dense(64, input_dim=X_train.shape[1], activation='relu'))
+    model.add(Dense(32, activation='relu'))
+    model.add(Dense(len(np.unique(y_train_encoded)), activation='softmax'))
+
+    model.compile(optimizer='adam', loss='sparse_categorical_crossentropy', metrics=['accuracy'])
+
+    # Latih model
+    model.fit(X_train, y_train_encoded, epochs=50, batch_size=2, validation_data=(X_test, y_test_encoded))
+    
+    return model
 
 # Baca data dari file CSV
 data_df = pd.read_csv('sample.csv')
@@ -29,16 +44,17 @@ X_train, X_test, y_train_encoded, y_test_encoded = train_test_split(
     test_size=0.2, random_state=42
 )
 
-# Buat model
-model = Sequential()
-model.add(Dense(64, input_dim=X_train.shape[1], activation='relu'))
-model.add(Dense(32, activation='relu'))
-model.add(Dense(len(np.unique(y)), activation='softmax'))
+# Buat dan latih model
+trained_model = create_and_train_model(X_train, y_train_encoded, X_test, y_test_encoded)
 
-model.compile(optimizer='adam', loss='sparse_categorical_crossentropy', metrics=['accuracy'])
+# Save scaler
+scaler_filename = 'scaler.save'
+joblib.dump(scaler, scaler_filename)
 
-# Latih model
-model.fit(X_train, y_train_encoded, epochs=50, batch_size=2, validation_data=(X_test, y_test_encoded))
+# Save label_encoder
+label_encoder_filename = 'label_encoder.save'
+joblib.dump(label_encoder, label_encoder_filename)
 
-# Simpan model ke file quiz.h5
-model.save('quiz.h5')
+# Save the model to a file
+model_filename = 'quiz_model.h5'
+trained_model.save(model_filename)

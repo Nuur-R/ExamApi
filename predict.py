@@ -5,11 +5,11 @@ import joblib
 
 def make_prediction(new_input):
         # Load model from file
-    model = load_model('quiz_model.h5')
+    model = load_model('model/quiz_model.h5')
 
     # Load scaler and label_encoder from files
-    scaler = joblib.load('scaler.save')
-    label_encoder = joblib.load('label_encoder.save')
+    scaler = joblib.load('model/scaler.save')
+    label_encoder = joblib.load('model/label_encoder.save')
     
     # Normalisasi input baru
     new_input_normalized = scaler.transform(new_input)
@@ -24,7 +24,7 @@ def make_prediction(new_input):
 
 
 # Baca input baru (contoh)
-new_input = np.array([[3,2,2,2,5,2,2,2]])
+new_input = np.array([[3,3,3,3,3,3,3,3]])
 
 # Lakukan prediksi
 predicted_class = make_prediction(new_input)
