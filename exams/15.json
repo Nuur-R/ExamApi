@@ -1,0 +1,79 @@
+{
+    "exam": {
+      "title": "Quiz Kecerdasan",
+      "id": 1,
+      "questions": [
+        {
+          "type" : "spasial",
+          "question" : [
+            {
+              "id": 1,
+              "text": "Sebuah gambar terdiri dari empat kotak dengan pola yang unik di setiap kotak. Jika pola pada kotak pertama adalah A, kotak kedua adalah B, kotak ketiga adalah C, dan kotak keempat adalah D, pola mana yang akan muncul setelah D?",
+              "options": ["E", "F", "G", "H"],
+              "correct_option": 1
+            },
+            {
+              "id": 2,
+              "text": "Diberikan suatu gambar tiga dimensi dari sebuah kubus. Jika kubus tersebut dipotong dengan melintang secara horizontal, bagian mana yang akan terlihat pada bagian atas hasil potongan?",
+              "options": ["Permukaan atas kubus", "Permukaan bawah kubus", "Permukaan depan kubus", "Permukaan samping kubus"],
+              "correct_option": 0
+            },
+            {
+              "id": 3,
+              "text": "Sebuah gambar menunjukkan susunan tangga yang terdiri dari beberapa anak tangga. Jika seseorang naik satu anak tangga, kemudian turun dua anak tangga, dan terakhir naik tiga anak tangga, pada anak tangga ke berapa orang tersebut berada?",
+              "options": ["Anak tangga pertama", "Anak tangga kedua", "Anak tangga ketiga", "Anak tangga keempat"],
+              "correct_option": 2
+            },
+            {
+              "id": 4,
+              "text": "Jika sebuah objek dimulai dari titik A dan bergerak 3 langkah ke utara, 4 langkah ke timur, 2 langkah ke selatan, dan akhirnya 5 langkah ke barat, di mana posisi objek tersebut relatif terhadap titik awalnya?",
+              "options": ["Di utara titik awal", "Di selatan titik awal", "Di barat titik awal", "Di timur titik awal"],
+              "correct_option": 2
+            },
+            {
+              "id": 5,
+              "text": "Diberikan sebuah gambar segitiga dengan sisi-sisi yang berbeda panjang. Jika sudut yang tumpul terletak di sisi yang paling panjang, sudut mana yang akan lebih besar dari 90 derajat?",
+              "options": ["Sudut di sisi paling pendek", "Sudut di sisi sedang", "Semua sudut sama besar", "Tidak ada sudut yang lebih besar dari 90 derajat"],
+              "correct_option": 0
+            }
+          ]
+        },
+        {
+          "type" : "spasial",
+          "question" : [
+            {
+              "id": 1,
+              "text": "Bagaimana Anda biasanya menyampaikan ide atau informasi dengan efektif kepada orang lain?",
+              "options": ["Melalui percakapan langsung.", "Dengan menulis dalam bentuk esai atau artikel.", "Menggunakan grafik dan gambar.", "Dengan memberikan presentasi lisan."],
+              "correct_option": 3
+            },
+            {
+              "id": 2,
+              "text": "Apa yang biasanya Anda lakukan ketika menemui kata-kata baru yang tidak dikenal?",
+              "options": ["Mencari artinya dalam kamus.", "Mencoba menebak artinya berdasarkan konteks.", "Bertanya kepada orang lain.", "Mengabaikannya dan melanjutkan membaca."],
+              "correct_option": 0
+            },
+            {
+              "id": 3,
+              "text": "Seorang penulis ingin menyampaikan ide kompleks tentang perubahan iklim kepada khalayak yang luas. Apa yang mungkin menjadi pendekatan yang paling efektif?",
+              "options": ["Menulis artikel ilmiah yang rinci.", "Menyajikan informasi melalui grafik dan visual.", "Menggunakan bahasa sederhana dan contoh konkret.", "Memberikan kuliah panjang secara langsung."],
+              "correct_option": 2
+            },
+            {
+              "id": 4,
+              "text": "Bagaimana Anda biasanya merespon ketika membaca ulasan buku atau film yang menarik perhatian banyak orang?",
+              "options": ["Segera membaca atau menontonnya.", "Menimbang berbagai pendapat sebelum membuat keputusan.", "Mencari informasi tambahan untuk memverifikasi ulasan tersebut.", "Tidak begitu tertarik dengan ulasan orang lain."],
+              "correct_option": 1
+            },
+            {
+              "id": 5,
+              "text": "Seorang pembicara umum ingin memastikan bahwa pesan mereka diterima dengan baik oleh audiens yang beragam. Apa yang sebaiknya mereka pertimbangkan?",
+              "options": ["Menggunakan berbagai jenis bahasa tubuh.", "Menggunakan kosakata yang rumit dan teknis.", "Menghindari penggunaan contoh dan analogi.", "Berkonsentrasi hanya pada aspek teoritis."],
+              "correct_option": 0
+            }
+          ]
+        }
+      ]
+    }
+  }
+  

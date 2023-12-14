@@ -1,0 +1,25 @@
+{
+    "answer":[
+        {
+            "type" : "spasial",
+            "user_answers": [
+                {"quiz_id": 1, "user_answer": 1},
+                {"quiz_id": 2, "user_answer": 0},
+                {"quiz_id": 3, "user_answer": 2},
+                {"quiz_id": 4, "user_answer": 2},
+                {"quiz_id": 5, "user_answer": 0}
+            ]
+        },
+        {
+            "type" : "linguistik",
+            "user_answers": [
+                {"quiz_id": 1, "user_answer": 3},
+                {"quiz_id": 2, "user_answer": 0},
+                {"quiz_id": 3, "user_answer": 2},
+                {"quiz_id": 4, "user_answer": 1},
+                {"quiz_id": 5, "user_answer": 0}
+            ]
+        }
+    ]
+}
+  
